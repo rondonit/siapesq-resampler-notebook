@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# ESFM configuration to avoid some common issues
+echo "export OMP_NUM_THREADS=1" >> ~/.bashrc
+echo "export OPENBLAS_NUM_THREADS=1" >> ~/.bashrc
+echo "export MKL_NUM_THREADS=1" >> ~/.bashrc
+echo "export NUMEXPR_NUM_THREADS=1" >> ~/.bashrc
+echo "export ESMF_LOGFILE=ESMF_LOG" >> ~/.bashrc
+
+# Install the IPython kernel for the siapesq environment
+python -m ipykernel install --user --name siapesq --display-name "SIAPESQ - Resampler Notebook"

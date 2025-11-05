@@ -1,0 +1,24 @@
+name: resampler-env
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - numpy
+  - pandas
+  - xarray>=2024.6
+  - dask-core
+  - netcdf4
+  - h5netcdf
+  - cftime
+  - esmf>=8.5
+  - esmpy>=8.5
+  - xesmf>=0.8
+  - pyproj
+  - rioxarray
+  - bottleneck
+  - tqdm
+  - ipykernel
+  - jupyterlab
+  - pip:
+      - pooch
